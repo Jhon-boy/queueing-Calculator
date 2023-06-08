@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(217, 218, 219);
+  }
+  
+  .todo {
+    display: flex;
+  }
+  
+  .main-menu {
+    background: #cdcecf;
+    border-right: 1px solid #e5e5e5;
+  display: flex;
+    top: 20px;
+    bottom: 0;
+    height: 95%;
+    left: 0;
+    width: 250px;
+    overflow: visible;
+    -webkit-transition: width 0.05s linear;
+    transition: width 0.05s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+  }
+  .costos  div{
+    
+  }
+.sidebar-open .toggle-button {
+    display: none;
+  }
+  
+  .sidebar-closed .toggle-button {
+    display: block;
+  }
+  
+  .sidebar-closed .main-menu {
+    width: 0;
+  }
+  
+  .sidebar-open .main-menu {
+    width: 250px;
+    /* Otros estilos del menú abierto */
+  }
+  .titles {
+    color: black;
+  }
+
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .main-menu {
+      width: 100%;
+      position: static;
+      height: auto;
+      border-right: none;
+      -webkit-transition: none;
+      transition: none;
+      -webkit-transform: none;
+    }
+  }
+  
